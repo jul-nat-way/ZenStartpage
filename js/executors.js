@@ -62,7 +62,7 @@ export default {
   },
   link: (query) => {
     if (query) {
-      window.location.href = query;
+      window.location.href = `https://${encodeURIComponent(query)}`;
     } else {
       render("No query, redirecting to DDG!");
       window.location.href = "https://duckduckgo.com";
