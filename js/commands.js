@@ -12,6 +12,11 @@ export default [
     execute: executor.ls,
   },
   {
+    name: ["link", "l"],
+    description: "Opens the given link",
+    execute: executor.link,
+  },
+  {
     name: ["help"],
     description: "Lists available commands",
     execute: executor.help,
